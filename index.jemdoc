@@ -1,0 +1,32 @@
+# jemdoc: {index.html}, nofooter  
+==Fuchen Ma
+
+~~~
+{}{img_left}{2.jpeg}{alt text}{110}{140}
+PhD student, Tencent Elite Talent \n [http://www.wingtecher.com Software System Security Assurance Group - WingTecher Lab], \n[https://www.tsinghua.edu.cn Tsinghua University (THU)]\n
+Beijing, China \n 
+Phone: \+86 188 1006 5655 \n
+Email: mafc19@mails.tsinghua.edu.cn \n
+Google Scholar Profile: [https://scholar.google.com/citations?user=hz7NKKIAAAAJ&hl=en Fuchen Ma at Google Scholar]
+~~~
+
+== About me
+I received the B.S. degree in software engineering from Beijing University of Posts and Telecommunications ([https://www.bupt.edu.cn BUPT]), China, in 2019. Now I'm purchacing for my Ph.D in Tsinghua University. 
+
+== Research
+My research interests include 
+- Security of Smart Contracts  
+- Blockchain Systems
+- Fuzzing technique
+
+== Recent Publications 
+. *EVM\*: From Offline Detection to Online Reinforcement for Ethereum Virtual Machine(SANER'19).* \[[http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/saner-evm.pdf pdf]\] \n
+  F Ma, Y Fu, M Ren, M Wang, Y Jiang, K Zhang, H Li, X Shi
+. *EVMFuzzer: detect EVM vulnerabilities via fuzz testing(ESEC/FSE'19).* \[[http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/fse19demo.pdf pdf]\] \n
+  Y Fu, M Ren, F Ma, H Shi, X Yang, Y Jiang, H Li, X Shi
+. *Enfuzz: Ensemble fuzzing with seed synchronization among diverse fuzzers(USENIX Security'19).*\[[http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/security19-enfuzz.pdf pdf]\] \n
+  Y Chen, Y Jiang, F Ma, J Liang, M Wang, C Zhou, X Jiao, Z Su
+
+== Awards
+. FISCO National Blockchain Application Competition: *Third Prize* \n
+. Selected into Tencent Elite Talent Training Program

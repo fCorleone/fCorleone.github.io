@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Wingtecher Lab in Tsinghua University</a>. 11-308, East-Main Building. fuchenma525@gmail.com. 
+subtitle: Postdoctoral Researcher, supervised by <a href="https://sites.google.com/site/jiangyu198964/home">Prof. Yu Jiang</a> 
 
 profile:
   align: right
@@ -13,13 +13,22 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p>Email: fuchenma525@gmail.com</p>
     <p>11-308, East-Main Building</p>
-    <p>School of Software</p>
-    <p>Tsinghua University</p>
-    <p>Beijing, China</p>
-
+    <p>School of Software, Tsinghua University</p>
+  
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I received my Ph.D in Tsinghua University advised by Jiaguang Sun and Yu Jiang, in 2024. I'm interested in the research of the new design and the security of blockchain systems. In 2021, I was chosen to be the MVP of FISCO-BCOS community. In addition, I was selected into Tencent Elite Talent Training Program in 2020. If you are interested in my research or have any questions, please feel free to contact with me. 
+I received my Ph.D in Tsinghua University in 2024, advised by professor Jiaguang Sun and professor Yu Jiang. 
+I got my Bachelor's degree in Beijing University of Posts and Telecommunications in 2019.
+Currently, I'm a postdoctoral researcher (a shuimu scholar) in Tsinghua University.
+My research focuses on the fuzzing testing of blockchain systems, distributed systems, and protocol implementations. 
+
+I've published 21 papers in top-tier conferences and journals such as CCS, NDSS, S&P, USENIX Security and TSE. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 14 CVEs assigned by US National Vulnerabilities Database. 
+In 2021, I was recognized as the MVP of the year by the FISCO BCOS community and selected as a Tencent Elite Talent. 
+Ialso received the National Scholarship in 2023 and was named an Outstanding Graduate of Beijing in 2024.
+
+Currently, I'm working on two projects: 1) Explore the industry practise for fuzzing on blockchain systems. 2) Effective fuzzing on IoT devices' protocols (such as protocols for the IP cameras).
+If you are interested in my research or have any questions, please feel free to contact with me. 

@@ -6,6 +6,10 @@ subtitle: <a href='#'>Wingtecher Lab in Tsinghua University</a>. 11-308, East-Ma
 
 profile:
   align: right
+  degree: Postdoctoral Researcher, supervised by <a href="https://sites.google.com/site/jiangyu198964/home">Prof. Yu Jiang</a>
+  group: <a href="http://www.wingtecher.com/homeen">WingTecher Lab</a>
+  university: <a href="https://www.tsinghua.edu.cn/en/"> Tsinghua University </a>
+  email: fuchenma525@gmail.com
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >

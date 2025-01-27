@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My paper entitled 'Finding Metadata Inconsistencies in Distributed File Systems via Cross-Node Operation Modeling' got accepted by USENIX Security 2025!!! emoji! :sparkles: :smile:
+My paper entitled 'Finding Metadata Inconsistencies in Distributed File Systems via Cross-Node Operation Modeling' got accepted by **USENIX Security 2025**!!! emoji! :sparkles: :smile:

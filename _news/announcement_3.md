@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper entitled 'Chord: Towards a Unified Detection of Blockchain Transaction Parallelism Bugs' got accepted by **ICSE 2025**!!! emoji! :sparkles: :smile:
+Our paper entitled 'Chord: Towards a Unified Detection of Blockchain Transaction Parallelism Bugs' got accepted by **ICSE 2025**!!! :sparkles: :smile:

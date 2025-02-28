@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Our paper entitled 'Themis: Finding Imbalance Failures in Distributed File Systems via a Load Variance Model' got accepted by **EuroSys 2025**!!! emoji! :sparkles: :smile:
+Our paper entitled 'Themis: Finding Imbalance Failures in Distributed File Systems via a Load Variance Model' got accepted by **EuroSys 2025**!!! :sparkles: :smile:
 

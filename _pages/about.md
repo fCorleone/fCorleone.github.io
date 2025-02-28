@@ -26,9 +26,10 @@ I got my Bachelor's degree in Beijing University of Posts and Telecommunications
 Currently, I'm a postdoctoral researcher (a shuimu scholar) in Tsinghua University.
 My research focuses on the fuzzing testing of blockchain systems, distributed systems, and protocol implementations. 
 
-I've published 20+ papers in top-tier conferences and journals such as CCS, NDSS, USENIX Security, S&P, and TSE. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 14 CVEs assigned by US National Vulnerabilities Database. 
+I've published 20+ papers in top-tier conferences and journals such as CCS, NDSS, USENIX Security, S&P, TSE, and TOSEM. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 14 CVEs assigned by US National Vulnerabilities Database. 
+I achieved the China Computer Federation's(CCF) First Prize for Technical Invention in 2024.
 In 2021, I was recognized as the MVP of the year by the FISCO BCOS community and selected as a Tencent Elite Talent. 
-Ialso received the National Scholarship in 2023 and was named an Outstanding Graduate of Beijing in 2024.
+I also received the National Scholarship in 2023 and was named an Outstanding Graduate of Beijing in 2024.
 
 Currently, I'm working on two projects: 1) Explore the industry practise for fuzzing on blockchain systems. 2) Effective fuzzing on IoT devices' protocols (such as protocols for the IP cameras).
 If you are interested in my research or have any questions, please feel free to contact with me. 

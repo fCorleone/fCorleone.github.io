@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My doctoral dissertation was recognized as an **Excellent Doctoral Dissertation by the China Computer Federation**. :sparkles: :smile:
+My doctoral dissertation was recognized as an **Excellent Doctoral Dissertation by the China Institute of Electronics**. :sparkles: :smile:

@@ -34,5 +34,5 @@ In the same year, I also achieved the China Computer Federation's(CCF) First Pri
 In 2021, I was recognized as the MVP of the year by the FISCO BCOS community and selected as a Tencent Elite Talent. 
 I also received the National Scholarship in 2023 and was named an Outstanding Graduate of Beijing in 2024.
 
-**Current Research:** Currently, I'm working on two projects: 1) Explore the industry practise for fuzzing on blockchain systems. 2) Effective fuzzing on IoT devices' protocols (such as protocols for the IP cameras).
+**Current Research:** I am currently working on the security of robotic systems, with a focus on ensuring the robustness and resilience of platforms such as quadruped robots.
 If you are interested in my research or have any questions, please feel free to contact with me. 

@@ -146,13 +146,20 @@
     </div>
 
     <!-- Journal/Book title and date -->
-    {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
-    {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-    {% if entry.type == 'article' %}
+    {% assign entry_type_str = entry.type | join: ',' %}
+    {% assign is_proceedings = false %}
+    {% assign is_thesis = false %}
+    {% if entry_type_str contains 'inproceedings' or entry_type_str contains 'incollection' %}
+      {% assign is_proceedings = true %}
+    {% endif %}
+    {% if entry_type_str contains 'thesis' or entry_type_str contains 'mastersthesis' or entry_type_str contains 'phdthesis' %}
+      {% assign is_thesis = true %}
+    {% endif %}
+    {% if entry.type == 'article' or entry_type_str contains 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-    {% elsif proceedings contains entry.type %}
+    {% elsif is_proceedings %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
-    {% elsif thesis contains entry.type %}
+    {% elsif is_thesis %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}

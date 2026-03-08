@@ -26,7 +26,7 @@ I got my Bachelor's degree in Beijing University of Posts and Telecommunications
 Currently, I'm a postdoctoral researcher (a shuimu scholar) in Tsinghua University.
 My research focuses on the fuzzing testing of blockchain systems, distributed systems, and protocol implementations. 
 
-**Research Achievements:** I've published 20+ papers in top-tier conferences and journals such as CCS, NDSS, USENIX Security, S&P, TSE, and TOSEM. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 14 CVEs assigned by US National Vulnerabilities Database. 
+**Research Achievements:** I've published 30+ papers in top-tier conferences and journals such as S&P, CCS, NDSS, USENIX Security, Eurosys, and ATC. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 32 CVEs assigned by US National Vulnerabilities Database. 
 
 ⭐ **Highlight:** As the first author, I have successfully published papers in all 'The Big Four' top-tier security conferences (CCS, NDSS, USENIX Security, and S&P), achieving a milestone in the cybersecurity research community. 
 

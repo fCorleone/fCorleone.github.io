@@ -39,9 +39,9 @@ I also received the National Scholarship in 2023 and was named an Outstanding Gr
 **Current Research:** I am currently working on the security of robotic systems, with a focus on ensuring the robustness and resilience of platforms such as quadruped robots.
 
 **Academic Service:**
-- Program Committee (PC), ICST 2026
 - Program Committee (PC), CCS 2026
-- Shadow Program Committee (Shadow PC), EuroSys 2025
+- Program Committee (PC), ICST 2026
+- Shadow Program Committee (Shadow PC), EuroSys 2026
 - Reviewer, IEEE Transactions on Software Engineering (TSE)
 - Reviewer, IEEE Transactions on Dependable and Secure Computing (TDSC)
 - Reviewer, ACM Transactions on Software Engineering and Methodology (TOSEM)

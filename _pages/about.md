@@ -26,7 +26,7 @@ I got my Bachelor's degree in Beijing University of Posts and Telecommunications
 Currently, I'm a postdoctoral researcher (a shuimu scholar) in Tsinghua University.
 My research focuses on the fuzzing testing of blockchain systems, distributed systems, and protocol implementations. 
 
-**Research Achievements:** I've published 30+ papers in top-tier conferences and journals such as S&P, CCS, NDSS, USENIX Security, Eurosys, and ATC. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 32 CVEs assigned by US National Vulnerabilities Database. 
+**Research Achievements:** I've published 30+ papers in top-tier conferences and journals such as OSDI, S&P, CCS, NDSS, USENIX Security, Eurosys, and ATC. I have detected 50+ vulnerabilities in renowned commercial blockchain systems such as FISCO BCOS, Diem, HyperLedger Fabric and Go-Ethereum, with 32 CVEs assigned by US National Vulnerabilities Database. 
 
 ⭐ **Highlight:** As the first author, I have successfully published papers in all 'The Big Four' top-tier security conferences (CCS, NDSS, USENIX Security, and S&P), achieving a milestone in the cybersecurity research community. 
 
@@ -36,9 +36,10 @@ In the same year, I also achieved the China Computer Federation's(CCF) First Pri
 In 2021, I was recognized as the MVP of the year by the FISCO BCOS community and selected as a Tencent Elite Talent. 
 I also received the National Scholarship in 2023 and was named an Outstanding Graduate of Beijing in 2024.
 
-**Current Research:** I am currently working on the security of robotic systems, with a focus on ensuring the robustness and resilience of platforms such as quadruped robots.
+**Current Research:** I am currently working on the robotic systems, with a focus on ensuring the robustness and resilience of platforms such as quadruped robots. In addition, I also focus on the in the interoperability of heterogeneous robots.
 
 **Academic Service:**
+- Program Committee (PC), ESEC/FSE 2027
 - Program Committee (PC), CCS 2026
 - Program Committee (PC), ICST 2026
 - Shadow Program Committee (Shadow PC), EuroSys 2026

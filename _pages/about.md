@@ -47,4 +47,9 @@ I also received the National Scholarship in 2023 and was named an Outstanding Gr
 - Reviewer, IEEE Transactions on Dependable and Secure Computing (TDSC)
 - Reviewer, ACM Transactions on Software Engineering and Methodology (TOSEM)
 
+**Talks:**
+- [Villain in the Dark Forest: Fuzzing and Chaos Testing for Blockchain Systems](https://crypto.stanford.edu/seclab/sem-25-26/ma.html), Stanford Security Seminar, Stanford University, Dec. 2025
+- [Villain in the Dark Forest: Fuzzing and Chaos Testing for Blockchain Systems](https://securityseminar.sites.northeastern.edu/calendar_event/event-template-19/), Northeastern Security and Privacy Seminar, Northeastern University, Dec. 2025
+- Villain in the Dark Forest: Fuzzing and Chaos Testing for Blockchain Systems, Boston University, Dec. 2025
+
 If you are interested in my research or have any questions, please feel free to contact with me. 

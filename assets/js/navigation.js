@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("navbar");e&&e.addEventListener("click",t=>{if(!(t.target instanceof Element&&t.target.closest("a.nav-link")))return;const n=e.querySelector(".navbar-toggler");n&&"true"===n.getAttribute("aria-expanded")&&n.click()})})();

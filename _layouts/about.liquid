@@ -1,80 +1,171 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+<div class="academic-home">
+  <section class="home-hero" id="research" aria-labelledby="profile-name">
+    <div class="hero-copy">
+      <div class="profile-overview">
+        <img class="profile-photo" src="{{ '/assets/img/prof_pic_ccs.jpg' | relative_url }}" alt="马福辰 · Fuchen Ma" width="156" height="194">
+        <div class="profile-heading">
+          <h1 id="profile-name">{% include bilingual.liquid en="Fuchen Ma" zh="马福辰" %}</h1>
+          <p class="name-translation"><span data-lang="en" lang="zh-CN">马福辰</span><span data-lang="zh" lang="en">Fuchen Ma</span></p>
+          <p class="hero-role">{% include bilingual.liquid en="Postdoctoral researcher · Shuimu Scholar" zh="博士后 · 水木学者" %}</p>
+          <p class="hero-affiliation">{% include bilingual.liquid en="School of Software, Tsinghua University" zh="清华大学 · 软件学院" %}</p>
+        </div>
       </div>
-    {% endif %}
-
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
+      <div class="hero-intro">
+        <p>
+          {% include bilingual.liquid en="I study system security and testing, and am now turning my attention to robotics. My current interests are robot security, the generation, collection and curation of robot data, and interoperability between different robots." zh="我做系统安全与测试，最近把研究重心转向了机器人。接下来，我想研究机器人的安全与攻防、数据生成与收集筛选，以及不同机器人之间的互操作。" %}
+        </p>
       </div>
-    {% endif %}
+      <div class="hero-links">
+        <a href="mailto:fuchenma525@gmail.com">fuchenma525@gmail.com <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/cv/' | relative_url }}"
+          ><span data-lang="en" lang="en">Curriculum vitae</span> <span data-lang="zh" lang="zh-CN">个人简历</span>
+          <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </div>
+    <figure class="robot-scene" data-mode="data" aria-label="机器人研究交互示意">
+      <div class="scene-viewport">
+        <canvas id="robot-canvas" role="img" aria-label="四足机器人结构与研究方向示意 / Robot structure and research concepts" hidden></canvas>
+        <svg class="scene-fallback" viewBox="0 0 560 400" role="img" aria-label="四足机器人结构示意 / Quadruped robot schematic">
+          <g fill="none" stroke="#315766" stroke-width="1"><path d="M40 310 280 190 520 310 280 430Z M100 280 340 400 M160 250 400 370 M220 220 460 340 M100 340 340 220 M160 370 400 250 M220 400 460 280"/></g>
+          <g fill="#122e3a" stroke="#85d5df" stroke-width="2"><path d="M180 150 310 108 398 151 267 200Z"/><path d="M180 150 267 200 267 230 180 180Z"/><path d="M267 200 398 151 398 180 267 230Z"/></g>
+          <g fill="none" stroke="#74c8d2" stroke-width="8" stroke-linecap="round"><path d="M199 182 185 232 204 287 M264 224 253 274 277 329 M329 169 350 218 337 275 M380 185 399 236 384 290"/></g>
+          <g fill="#c7f6f7"><circle cx="285" cy="147" r="9"/><circle cx="376" cy="163" r="4"/></g>
+        </svg>
+      </div>
+      <figcaption class="scene-caption">
+        <div class="scene-description" data-description="security" hidden>
+          {% include bilingual.liquid en="Attack surfaces. Defensive boundaries." zh="寻找攻击面，验证防御边界。" %}
+        </div>
+        <div class="scene-description" data-description="data">
+          {% include bilingual.liquid en="Sense. Generate. Collect. Select." zh="感知、生成、收集与筛选。" %}
+        </div>
+        <div class="scene-description" data-description="interop" hidden>
+          {% include bilingual.liquid en="Different robots. Shared capabilities." zh="连接不同机器人，协同各自的能力。" %}
+        </div>
+      </figcaption>
+      <div class="scene-controls" hidden>
+        <div class="scene-modes" role="group" aria-label="研究方向 / Research directions">
+          <button type="button" data-mode="security" aria-pressed="false">{% include bilingual.liquid en="Security" zh="安全" %}</button>
+          <button type="button" data-mode="data" aria-pressed="true">{% include bilingual.liquid en="Data" zh="数据" %}</button>
+          <button type="button" data-mode="interop" aria-pressed="false">{% include bilingual.liquid en="Interop" zh="互操作" %}</button>
+        </div>
+        <button id="motion-toggle" type="button" data-paused="false">
+          <span class="motion-pause">{% include bilingual.liquid en="Pause" zh="暂停" %}</span
+          ><span class="motion-play" hidden>{% include bilingual.liquid en="Play" zh="播放" %}</span>
+        </button>
+      </div>
+    </figure>
+  </section>
 
-    {% if site.newsletter.enabled and site.footer_fixed %}
-      {% include scripts/newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  <section class="home-section" id="news">
+    <div class="section-heading">
+      <h2><span data-lang="en" lang="en">Latest news</span> <span data-lang="zh" lang="zh-CN">最新动态</span></h2>
+      <a href="{{ '/news/' | relative_url }}"
+        ><span data-lang="en" lang="en">All updates</span> <span data-lang="zh" lang="zh-CN">全部动态</span> <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    {% include news.liquid limit=true count=3 %}
+  </section>
+
+  <section class="home-section" id="publications">
+    <div class="section-heading">
+      <h2><span data-lang="en" lang="en">Selected work</span> <span data-lang="zh" lang="zh-CN">过往研究</span></h2>
+      <a href="{{ '/publications/' | relative_url }}"
+        ><span data-lang="en" lang="en">All publications</span> <span data-lang="zh" lang="zh-CN">完整论文列表</span>
+        <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    <p class="section-intro">
+      <span data-lang="en" lang="en">Selected papers on system security and testing. Click a figure for a closer look.</span>
+      <span data-lang="zh" lang="zh-CN">以下是我在系统安全与测试方面的部分工作。点击图可以查看原图。</span>
+    </p>
+    {% include selected_papers.liquid %}
+  </section>
+
+  <div class="home-columns">
+    <section class="home-section" id="talks">
+      <h2><span data-lang="en" lang="en">Talks</span> <span data-lang="zh" lang="zh-CN">学术演讲</span></h2>
+      <h3 class="talk-title" lang="en">Villain in the Dark Forest: Fuzzing and Chaos Testing for Blockchain Systems</h3>
+      <ul class="clean-list">
+        <li>
+          <a href="https://crypto.stanford.edu/seclab/sem-25-26/ma.html"
+            ><span data-lang="en" lang="en">Stanford University</span> <span data-lang="zh" lang="zh-CN">斯坦福大学</span> ↗</a
+          ><span>2025.12</span>
+        </li>
+        <li>
+          <a href="https://securityseminar.sites.northeastern.edu/calendar_event/event-template-19/"
+            ><span data-lang="en" lang="en">Northeastern University</span> <span data-lang="zh" lang="zh-CN">美国东北大学</span> ↗</a
+          ><span>2025.12</span>
+        </li>
+        <li><span data-lang="en" lang="en">Boston University</span> <span data-lang="zh" lang="zh-CN">波士顿大学</span><span>2025.12</span></li>
+      </ul>
+    </section>
+    <section class="home-section" id="service">
+      <h2><span data-lang="en" lang="en">Academic service</span><span data-lang="zh" lang="zh-CN">学术服务</span></h2>
+      <h3 class="small-label"><span data-lang="en" lang="en">PROGRAM COMMITTEES</span><span data-lang="zh" lang="zh-CN">程序委员会</span></h3>
+      <ul class="clean-list">
+        <li>ESEC/FSE <span>2027</span></li>
+        <li>CCS <span>2026</span></li>
+        <li>ICST <span>2026</span></li>
+        <li>EuroSys · Shadow PC <span>2026</span></li>
+      </ul>
+      <h3 class="small-label service-review">
+        <span data-lang="en" lang="en">JOURNAL REVIEWER</span><span data-lang="zh" lang="zh-CN">期刊审稿</span>
+      </h3>
+      <p class="muted" lang="en">IEEE TSE · IEEE TDSC · ACM TOSEM</p>
+    </section>
+  </div>
+  <section class="home-section" id="awards">
+    <h2><span data-lang="en" lang="en">Honors & awards</span><span data-lang="zh" lang="zh-CN">荣誉与奖励</span></h2>
+    <ul class="awards-list">
+      <li>
+        <span data-lang="en" lang="en">Excellent Doctoral Dissertation, China Institute of Electronics</span
+        ><span data-lang="zh" lang="zh-CN">中国电子学会优秀博士学位论文</span>
+      </li>
+      <li>
+        <span data-lang="en" lang="en">First Prize, Beijing Science and Technology Progress Award, 2024 <span class="muted">(4/15)</span></span
+        ><span data-lang="zh" lang="zh-CN">2024 年北京市科学技术进步奖一等奖 <span class="muted">（排名 4/15）</span></span>
+      </li>
+      <li>
+        <span data-lang="en" lang="en">First Prize, CCF Technology Invention Award, 2024 <span class="muted">(3/6)</span></span
+        ><span data-lang="zh" lang="zh-CN">2024 年中国计算机学会（CCF）技术发明奖一等奖 <span class="muted">（排名 3/6）</span></span>
+      </li>
+      <li>
+        <span data-lang="en" lang="en">Outstanding Graduate of Beijing, 2024 · National Scholarship, 2023</span
+        ><span data-lang="zh" lang="zh-CN">2024 年北京市优秀毕业生 · 2023 年国家奖学金</span>
+      </li>
+      <li>
+        <span data-lang="en" lang="en">FISCO BCOS MVP of the Year · Tencent Elite Talent, 2021</span
+        ><span data-lang="zh" lang="zh-CN">2021 年 FISCO BCOS 年度 MVP · 腾讯精英人才</span>
+      </li>
+    </ul>
+  </section>
+  <section class="home-section about-details" id="about">
+    <h2><span data-lang="en" lang="en">Background & contact</span><span data-lang="zh" lang="zh-CN">个人经历与联系</span></h2>
+    <p data-lang="en" lang="en">
+      I received my Ph.D. from Tsinghua University in 2024, advised by
+      <a href="https://www.thss.tsinghua.edu.cn/en/faculty/jiaguangsun.htm">Prof. Jiaguang Sun</a> and
+      <a href="https://sites.google.com/site/jiangyu198964/home">Prof. Yu Jiang</a>, and my bachelor’s degree from Beijing University of Posts and
+      Telecommunications in 2019.
+    </p>
+    <p data-lang="zh" lang="zh-CN">
+      2024 年于清华大学获得博士学位，导师为<a href="https://www.thss.tsinghua.edu.cn/en/faculty/jiaguangsun.htm">孙家广教授</a
+      >和<a href="https://sites.google.com/site/jiangyu198964/home">姜宇教授</a>；2019 年于北京邮电大学获得学士学位。
+    </p>
+    <p data-lang="en" lang="en">
+      My earlier research focused on testing and security in blockchain and distributed systems. I now want to bring that experience to robotics.
+      Please get in touch if you are interested in these questions.
+    </p>
+    <p data-lang="zh" lang="zh-CN">
+      过去，我主要研究区块链与分布式系统的测试和安全。接下来，我希望把这些经验带到机器人研究中。欢迎就这些问题与我交流。
+    </p>
+    <p class="office">
+      <span data-lang="en" lang="en">11-308, East-Main Building · School of Software, Tsinghua University</span
+      ><span data-lang="zh" lang="zh-CN">清华大学软件学院 · 东主楼 11-308</span>
+    </p>
+  </section>
 </div>

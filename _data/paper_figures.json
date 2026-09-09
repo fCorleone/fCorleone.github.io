@@ -1,0 +1,70 @@
+{
+  "eurosys26": {
+    "image": "/assets/img/research/thor-overview.webp",
+    "figure": 2,
+    "pdf_page": 4,
+    "width": 2108,
+    "height": 545,
+    "pdf": "http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/paper_from_26/thor_eurosys26.pdf",
+    "alt": "Thor overall workflow, Figure 2 from the original paper.",
+    "summary_en": "Combines hybrid message generation, two-tier parallel fuzzing and log-based oracles to test enterprise blockchain systems.",
+    "summary_zh": "结合主动与被动消息生成、两级并行测试和日志断言，对企业级区块链系统进行测试。",
+    "project": "https://github.com/THU-WingTecher/Thor"
+  },
+  "sp26": {
+    "image": "/assets/img/research/camveil-overview.webp",
+    "figure": 3,
+    "pdf_page": 4,
+    "width": 2104,
+    "height": 604,
+    "pdf": "http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/paper_from_26/camveil_s&p26.pdf",
+    "alt": "Camveil overall workflow, Figure 3 from the original paper.",
+    "summary_en": "Coordinates HTTP, RTSP and ONVIF through a camera status model to find vulnerabilities caused by interactions between protocols.",
+    "summary_zh": "通过摄像头状态模型协调 HTTP、RTSP 和 ONVIF，发现协议交互引起的安全问题。"
+  },
+  "ase2501": {
+    "image": "/assets/img/research/dualfuzz-overview.webp",
+    "figure": 5,
+    "pdf_page": 4,
+    "width": 1427,
+    "height": 588,
+    "pdf": "http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/DualFuzz_Camera_Ready.pdf",
+    "alt": "Dualfuzz overall workflow, Figure 5 from the original paper.",
+    "summary_en": "Models interactions between Wi-Fi transmission and reception, then uses latency feedback to guide coordinated fuzzing.",
+    "summary_zh": "建模 Wi-Fi 网卡发送与接收过程的相互影响，利用时延反馈指导双向协同测试。",
+    "award": "Distinguished Paper Award"
+  },
+  "security25": {
+    "image": "/assets/img/research/horcrux-overview.webp",
+    "figure": 3,
+    "pdf_page": 8,
+    "width": 1361,
+    "height": 900,
+    "pdf": "https://www.usenix.org/system/files/usenixsecurity25-ma-fuchen.pdf",
+    "alt": "Horcrux overall workflow, Figure 3 from the original paper.",
+    "summary_en": "Models relationships between cross-node file operations and uses temporary inconsistency duration to guide testing.",
+    "summary_zh": "建模跨节点文件操作之间的关系，以临时不一致的持续时间指导测试，发现元数据一致性问题。"
+  },
+  "chen2024chronos": {
+    "image": "/assets/img/research/chronos-overview.webp",
+    "figure": 4,
+    "pdf_page": 4,
+    "width": 1322,
+    "height": 622,
+    "pdf": "http://www.wingtecher.com/themes/WingTecherResearch/assets/papers/paper_from_24/Chronos_sp24.pdf",
+    "alt": "Chronos overall workflow, Figure 4 from the original paper.",
+    "summary_en": "Combines runtime delay injection, deep-priority search and transient delays to find timeout bugs in distributed systems.",
+    "summary_zh": "结合运行时延迟注入、深度优先级搜索与瞬态延迟，发现分布式系统的超时处理缺陷。"
+  },
+  "ma2023loki": {
+    "image": "/assets/img/research/loki-overview.webp",
+    "figure": 4,
+    "pdf_page": 4,
+    "width": 2070,
+    "height": 754,
+    "pdf": "https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f78_paper.pdf",
+    "alt": "Loki overall workflow, Figure 4 from the original paper.",
+    "summary_en": "Joins the system as a node, tracks consensus states and generates messages to test consensus protocol implementations.",
+    "summary_zh": "作为节点加入系统，跟踪共识状态并生成测试消息，发现共识协议实现中的内存与逻辑缺陷。"
+  }
+}

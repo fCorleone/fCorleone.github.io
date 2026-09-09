@@ -1,0 +1,65 @@
+---
+---
+{% assign paper = site.data.paper_figures[entry.key] %}
+<article class="paper-entry" id="selected-{{ entry.key }}">
+  {% if paper %}
+    <figure class="paper-figure">
+      <a class="paper-image-link" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener">
+        <img
+          src="{{ paper.image | relative_url }}"
+          alt="{{ paper.alt | escape }}"
+          width="{{ paper.width }}"
+          height="{{ paper.height }}"
+          loading="lazy"
+          decoding="async"
+        >
+        <span class="paper-figure-label"
+          ><span lang="en">Fig. {{ paper.figure }}</span> · {% include bilingual.liquid en="View figure" zh="查看大图" %} ↗</span
+        >
+      </a>
+    </figure>
+  {% endif %}
+  <div class="paper-copy">
+    <p class="paper-venue" lang="en">
+      {{ entry.abbr | replace: "'", '’' -}}
+      {%- if paper.award %}
+        <span class="paper-award">· {{ paper.award }}</span>
+      {%- endif %}
+    </p>
+    <h3 class="paper-title" lang="en">
+      {% if paper -%}
+        <a href="{{ paper.pdf | escape }}" target="_blank" rel="noopener">{{ entry.title }}</a>
+      {%- else -%}
+        {{- entry.title -}}
+      {%- endif %}
+    </h3>
+    <p class="paper-authors" lang="en">
+      {% for author in entry.author_array -%}
+        {%- unless forloop.first %}, {% endunless -%}
+        {%- if author.first == 'Fuchen' and author.last == 'Ma' -%}
+          <strong>
+            {{- author.first }}
+            {{ author.last -}}
+          </strong>
+          {%- if entry.note contains 'contributed equally' -%}
+            <span class="equal-contribution"> (co-first author)</span>
+          {%- endif -%}
+        {%- else -%}
+          {{- author.first }}
+          {{ author.last -}}
+        {%- endif -%}
+      {%- endfor %}
+    </p>
+    {% if paper %}
+      <p class="paper-summary">{% include bilingual.liquid en=paper.summary_en zh=paper.summary_zh %}</p>
+      <div class="paper-links">
+        <a href="{{ paper.pdf | escape }}#page={{ paper.pdf_page }}" target="_blank" rel="noopener">
+          {%- include bilingual.liquid en="Read paper" zh="阅读论文" %} ↗</a
+        >
+        {%- if paper.project -%}
+          <a href="{{ paper.project | escape }}" target="_blank" rel="noopener">{% include bilingual.liquid en="Project" zh="项目" %} ↗</a>
+        {%- endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>

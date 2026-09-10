@@ -66,5 +66,16 @@
     "alt": "Loki overall workflow, Figure 4 from the original paper.",
     "summary_en": "Joins the system as a node, tracks consensus states and generates messages to test consensus protocol implementations.",
     "summary_zh": "作为节点加入系统，跟踪共识状态并生成测试消息，发现共识协议实现中的内存与逻辑缺陷。"
+  },
+  "jiang2026usec": {
+    "image": "/assets/img/research/usec-overview.webp",
+    "figure": 6,
+    "pdf_page": 8,
+    "width": 1338,
+    "height": 733,
+    "pdf": "https://www.usenix.org/system/files/osdi26-jiang-yu.pdf",
+    "alt": "USEC security interface workflow, Figure 6 from the original paper.",
+    "summary_en": "Uses resource-centric policy templates, demand-driven permission checks and LSM-compatible interfaces to simplify Linux mandatory access control.",
+    "summary_zh": "通过面向资源的策略模板、按需权限检查与兼容 LSM 的接口，简化 Linux 内核的强制访问控制。"
   }
 }

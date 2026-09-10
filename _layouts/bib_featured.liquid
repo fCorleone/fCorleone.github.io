@@ -56,6 +56,11 @@
         <a href="{{ paper.pdf | escape }}#page={{ paper.pdf_page }}" target="_blank" rel="noopener">
           {%- include bilingual.liquid en="Read paper" zh="阅读论文" %} ↗</a
         >
+        {%- if entry.doi -%}
+          <a href="https://doi.org/{{ entry.doi | escape }}" target="_blank" rel="noopener">DOI ↗</a>
+        {%- elsif entry.html -%}
+          <a href="{{ entry.html | escape }}" target="_blank" rel="noopener">HTML ↗</a>
+        {%- endif -%}
         {%- if paper.project -%}
           <a href="{{ paper.project | escape }}" target="_blank" rel="noopener">{% include bilingual.liquid en="Project" zh="项目" %} ↗</a>
         {%- endif %}

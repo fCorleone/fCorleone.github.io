@@ -329,6 +329,25 @@ html[data-language="zh"] .name-translation {
 .home-publications .links .btn:hover {
   background: #223b43;
 }
+.publications ol.bibliography li .abbr abbr.badge {
+  background-color: #183e39;
+  color: #d9f1e7 !important;
+  border: 1px solid #3d7165;
+  border-radius: 4px;
+  padding: 7px 10px;
+  font-family: var(--academic-font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: normal;
+  box-shadow: none;
+}
+.publications ol.bibliography li .abbr abbr.badge a {
+  color: inherit;
+}
+.publications h2.bibliography {
+  color: #a9bcb4;
+}
 footer.sticky-bottom {
   margin-top: 60px;
   background: transparent;

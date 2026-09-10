@@ -41,6 +41,9 @@
             {{- author.first }}
             {{ author.last -}}
           </strong>
+          {%- if entry.corresponding == 'true' -%}
+            <sup class="corresponding-mark" title="Corresponding author / 通讯作者">*</sup>
+          {%- endif -%}
           {%- if entry.note contains 'contributed equally' -%}
             <span class="equal-contribution"> (co-first author)</span>
           {%- endif -%}
@@ -50,6 +53,7 @@
         {%- endif -%}
       {%- endfor %}
     </p>
+    {% include corresponding_author.liquid entry=entry %}
     {% if paper %}
       <p class="paper-summary">{% include bilingual.liquid en=paper.summary_en zh=paper.summary_zh %}</p>
       <div class="paper-links">

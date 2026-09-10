@@ -348,6 +348,19 @@ html[data-language="zh"] .name-translation {
 .publications h2.bibliography {
   color: #a9bcb4;
 }
+.corresponding-mark {
+  color: #aadace;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-left: 1px;
+}
+.publications .author-role,
+.paper-copy .author-role {
+  color: #aadace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 4px 0 6px;
+}
 footer.sticky-bottom {
   margin-top: 60px;
   background: transparent;

@@ -160,14 +160,14 @@
           [x, -0.06, -4],
           [x, -0.06, 4],
         ],
-        `rgba(87,151,166,${alpha})`
+        `rgba(61,106,99,${alpha})`
       );
       line(
         [
           [-5, -0.06, x],
           [5, -0.06, x],
         ],
-        `rgba(87,151,166,${alpha})`
+        `rgba(61,106,99,${alpha})`
       );
     }
     ring([0, -0.045, 0], 2.17, "#396b7770");
@@ -175,7 +175,7 @@
     // A grounded shadow keeps the robot from reading as a floating icon.
     const shadow = [];
     for (let i = 0; i < 64; i++) shadow.push([Math.cos((i / 64) * TAU) * 1.55, -0.02, Math.sin((i / 64) * TAU) * 0.78]);
-    polygon(shadow, "#00000060");
+    polygon(shadow, "#25443c16");
   }
   const samplePoints = [];
   for (let i = 0; i < 230; i++) {
@@ -194,38 +194,38 @@
         [sweep, 2.6, 1.7],
         [sweep, 0.02, 1.7],
       ],
-      "#6affdf09",
-      "#7fe6da40"
+      "#287a660c",
+      "#357d6e55"
     );
     line(
       [
         [sweep, 0.02, -1.7],
         [sweep, 0.02, 1.7],
       ],
-      "#9afbe2",
+      "#247d68",
       1.6
     );
     samplePoints.forEach((point, i) => {
       const proximity = Math.max(0, 1 - Math.abs(point[0] - sweep) / 1.3);
-      dot(point, proximity > 0.75 ? 1.7 : 1.05, `rgba(143,250,221,${0.16 + proximity * 0.72})`);
-      if (i % 57 === 0 && proximity > 0.6) line([sensor, point], "#90f6da24");
+      dot(point, proximity > 0.75 ? 1.7 : 1.05, `rgba(31,121,103,${0.16 + proximity * 0.72})`);
+      if (i % 57 === 0 && proximity > 0.6) line([sensor, point], "#287a6633");
     });
     const angle = time * 0.25;
-    ring([0, 0.01, 0], 2.17, "#86efdbbb", 1.5, angle, angle + 0.65);
+    ring([0, 0.01, 0], 2.17, "#287a66bb", 1.5, angle, angle + 0.65);
   }
   function securityField() {
-    ring([0, 0.015, 0], 2.08, "#ffbc8860", 1.3);
-    ring([0, 1.1, 0], 2.08, "#e9a97a35", 1, 0.3, 2.8);
+    ring([0, 0.015, 0], 2.08, "#b8653866", 1.3);
+    ring([0, 1.1, 0], 2.08, "#b8653840", 1, 0.3, 2.8);
     for (let i = 0; i < 4; i++) {
       const angle = (i * TAU) / 4 + 0.35;
       const c = Math.cos(angle),
         s = Math.sin(angle);
       const p = (radius, y) => [c * radius, y, s * radius];
-      line([p(2.08, 0.02), p(2.08, 1.15)], "#e9a97a50", 1, [3, 5]);
-      line([p(3, 0.3), p(2.12, 0.3)], "#ffa46b55", 1);
+      line([p(2.08, 0.02), p(2.08, 1.15)], "#b8653866", 1, [3, 5]);
+      line([p(3, 0.3), p(2.12, 0.3)], "#b8653866", 1);
       const progress = (time * 0.35 + i * 0.25) % 1;
-      dot(p(3 - progress * 0.87, 0.3), 2, "#ffad7b", 6);
-      dot(p(2.08, 0.3), 2 + Math.sin(progress * Math.PI) * 2, "#ffc7a0");
+      dot(p(3 - progress * 0.87, 0.3), 2, "#b86538", 6);
+      dot(p(2.08, 0.3), 2 + Math.sin(progress * Math.PI) * 2, "#d17c49");
     }
     [
       [1.55, 1.67, 0.23],
@@ -233,7 +233,7 @@
       [-0.7, 1.55, 0.54],
     ].forEach((p) => {
       const s = project(p);
-      ctx.strokeStyle = "#ffbc88a0";
+      ctx.strokeStyle = "#b86538a0";
       ctx.lineWidth = 1;
       ctx.strokeRect(s[0] - 8, s[1] - 8, 16, 16);
     });
@@ -250,7 +250,7 @@
     });
     box(p([0, 0.39, 0]), [1.03, 0.35, 0.72], ["#203040", "#344e62", "#788ba2"], "#94a8bf");
     line([p([0, 0.55, 0]), p([0, 1.02, 0])], "#b2b9dd", 3);
-    dot(p([0, 1.02, 0]), 3, "#c8cbff", 8);
+    dot(p([0, 1.02, 0]), 3, "#6d78b7", 8);
     return p([0, 1.02, 0]);
   }
   function arm() {
@@ -283,15 +283,15 @@
       a[2] + (b[2] - a[2]) * progress,
     ];
     for (let i = 0; i <= 36; i++) path.push(point(i / 36));
-    line(path, "#b4bfff70", 1, [3, 4]);
-    dot(point((time * 0.25 + phase) % 1), 2.8, "#d7dbff", 9);
+    line(path, "#6970a49a", 1, [3, 4]);
+    dot(point((time * 0.25 + phase) % 1), 2.8, "#5b639f", 9);
   }
   function draw() {
     if (!width || !height) return;
     ctx.clearRect(0, 0, width, height);
     const halo = ctx.createRadialGradient(width * 0.5, height * 0.45, 10, width * 0.5, height * 0.5, width * 0.52);
-    halo.addColorStop(0, mode === "interop" ? "#333b622c" : "#20565c30");
-    halo.addColorStop(1, "#080f1500");
+    halo.addColorStop(0, mode === "interop" ? "#eceef880" : "#e5f1ed8c");
+    halo.addColorStop(1, "#ffffff00");
     ctx.fillStyle = halo;
     ctx.fillRect(0, 0, width, height);
     ctx.lineCap = "round";
@@ -313,8 +313,8 @@
     }
     // Fade the diagram into the page instead of boxing it in a dashboard card.
     const fade = ctx.createLinearGradient(0, height * 0.8, 0, height);
-    fade.addColorStop(0, "#080f1500");
-    fade.addColorStop(1, "#080f15");
+    fade.addColorStop(0, "#ffffff00");
+    fade.addColorStop(1, "#ffffff");
     ctx.fillStyle = fade;
     ctx.fillRect(0, height * 0.8, width, height * 0.2);
   }

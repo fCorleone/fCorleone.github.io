@@ -15,7 +15,7 @@ layout: default
       </div>
       <div class="hero-intro">
         <p>
-          {% include bilingual.liquid en="I study system security and testing, and am now turning my attention to robotics. My current interests are robot security, the generation, collection and curation of robot data, and interoperability between different robots." zh="我做系统安全与测试，最近把研究重心转向了机器人。接下来，我想研究机器人的安全与攻防、数据生成与收集筛选，以及不同机器人之间的互操作。" %}
+          {% include bilingual.liquid en="My research focuses on robot security, the generation, collection and curation of robot data, and interoperable systems for heterogeneous robots. My previous work focused on system security and testing." zh="我的研究主要关注机器人安全与攻防、机器人数据的生成、收集与筛选，以及异构机器人的互操作系统。此前主要从事系统安全与测试研究。" %}
         </p>
       </div>
       <div class="hero-links">
@@ -38,13 +38,13 @@ layout: default
       </div>
       <figcaption class="scene-caption">
         <div class="scene-description" data-description="security" hidden>
-          {% include bilingual.liquid en="Attack surfaces. Defensive boundaries." zh="寻找攻击面，验证防御边界。" %}
+          {% include bilingual.liquid en="Attack-surface analysis and security." zh="机器人攻击面分析与安全防护。" %}
         </div>
         <div class="scene-description" data-description="data">
-          {% include bilingual.liquid en="Sense. Generate. Collect. Select." zh="感知、生成、收集与筛选。" %}
+          {% include bilingual.liquid en="Robot data generation, collection and curation." zh="机器人数据的生成、采集与筛选。" %}
         </div>
         <div class="scene-description" data-description="interop" hidden>
-          {% include bilingual.liquid en="Different robots. Shared capabilities." zh="连接不同机器人，协同各自的能力。" %}
+          {% include bilingual.liquid en="Capability sharing and coordination across robots." zh="异构机器人之间的能力共享与协同。" %}
         </div>
       </figcaption>
       <div class="scene-controls" hidden>
@@ -73,7 +73,7 @@ layout: default
 
   <section class="home-section" id="publications">
     <div class="section-heading">
-      <h2><span data-lang="en" lang="en">Selected work</span> <span data-lang="zh" lang="zh-CN">过往研究</span></h2>
+      <h2><span data-lang="en" lang="en">Selected publications</span> <span data-lang="zh" lang="zh-CN">代表性论文</span></h2>
       <a href="{{ '/publications/' | relative_url }}"
         ><span data-lang="en" lang="en">All publications</span> <span data-lang="zh" lang="zh-CN">完整论文列表</span>
         <span aria-hidden="true">↗</span></a
@@ -81,7 +81,7 @@ layout: default
     </div>
     <p class="section-intro">
       <span data-lang="en" lang="en">Selected papers on system security and testing. Click a figure for a closer look.</span>
-      <span data-lang="zh" lang="zh-CN">以下是我在系统安全与测试方面的部分工作。点击图可以查看原图。</span>
+      <span data-lang="zh" lang="zh-CN">系统安全与测试方向的部分研究成果。点击配图可查看论文原图。</span>
     </p>
     {% include selected_papers.liquid %}
   </section>
@@ -106,7 +106,7 @@ layout: default
     </section>
     <section class="home-section" id="service">
       <h2><span data-lang="en" lang="en">Academic service</span><span data-lang="zh" lang="zh-CN">学术服务</span></h2>
-      <h3 class="small-label"><span data-lang="en" lang="en">PROGRAM COMMITTEES</span><span data-lang="zh" lang="zh-CN">程序委员会</span></h3>
+      <h3 class="small-label"><span data-lang="en" lang="en">PROGRAM COMMITTEES</span><span data-lang="zh" lang="zh-CN">程序委员会委员</span></h3>
       <ul class="clean-list">
         <li>ESEC/FSE <span>2027</span></li>
         <li>CCS <span>2026</span></li>
@@ -114,7 +114,7 @@ layout: default
         <li>EuroSys · Shadow PC <span>2026</span></li>
       </ul>
       <h3 class="small-label service-review">
-        <span data-lang="en" lang="en">JOURNAL REVIEWER</span><span data-lang="zh" lang="zh-CN">期刊审稿</span>
+        <span data-lang="en" lang="en">JOURNAL REVIEWER</span><span data-lang="zh" lang="zh-CN">期刊审稿人</span>
       </h3>
       <p class="muted" lang="en">IEEE TSE · IEEE TDSC · ACM TOSEM</p>
     </section>
@@ -145,7 +145,7 @@ layout: default
     </ul>
   </section>
   <section class="home-section about-details" id="about">
-    <h2><span data-lang="en" lang="en">Background & contact</span><span data-lang="zh" lang="zh-CN">个人经历与联系</span></h2>
+    <h2><span data-lang="en" lang="en">Background & contact</span><span data-lang="zh" lang="zh-CN">教育背景与联系方式</span></h2>
     <p data-lang="en" lang="en">
       I received my Ph.D. from Tsinghua University in 2024, advised by
       <a href="https://www.thss.tsinghua.edu.cn/en/faculty/jiaguangsun.htm">Prof. Jiaguang Sun</a> and
@@ -157,11 +157,11 @@ layout: default
       >和<a href="https://sites.google.com/site/jiangyu198964/home">姜宇教授</a>；2019 年于北京邮电大学获得学士学位。
     </p>
     <p data-lang="en" lang="en">
-      My earlier research focused on testing and security in blockchain and distributed systems. I now want to bring that experience to robotics.
-      Please get in touch if you are interested in these questions.
+      My earlier research focused on security testing for blockchain and distributed systems. My current work extends this research to robotic
+      systems. I welcome academic discussions and collaborations on robot security, data and interoperability.
     </p>
     <p data-lang="zh" lang="zh-CN">
-      过去，我主要研究区块链与分布式系统的测试和安全。接下来，我希望把这些经验带到机器人研究中。欢迎就这些问题与我交流。
+      我的前期研究聚焦区块链与分布式系统的安全测试，目前主要面向机器人系统开展相关研究。欢迎围绕机器人安全、数据与互操作开展学术交流与合作。
     </p>
     <p class="office">
       <span data-lang="en" lang="en">11-308, East-Main Building · School of Software, Tsinghua University</span

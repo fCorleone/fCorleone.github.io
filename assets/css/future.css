@@ -1,25 +1,25 @@
-/* An independent, robotics-inspired edition of the personal research page. */
+/* White research page with a robotics-inspired illustration. */
 :root,
 html[data-theme="dark"] {
   --academic-font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --academic-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Songti SC", "STSong", "SimSun", serif;
-  --academic-accent: #b3d7ca;
-  --academic-text: #eeece5;
-  --academic-muted: #adb4b4;
-  --academic-line: #303b40;
-  --academic-soft: #14232c;
-  --global-bg-color: #080f15;
+  --academic-accent: #1b6657;
+  --academic-text: #242a2b;
+  --academic-muted: #626e70;
+  --academic-line: #dce4e2;
+  --academic-soft: #f0f4f3;
+  --global-bg-color: #ffffff;
   --global-text-color: var(--academic-text);
   --global-text-color-light: var(--academic-muted);
   --global-theme-color: var(--academic-accent);
-  --global-hover-color: #e1efe7;
-  --global-card-bg-color: #10202a;
-  --global-code-bg-color: #14232c;
+  --global-hover-color: #124f43;
+  --global-card-bg-color: #f7f9f8;
+  --global-code-bg-color: #f0f4f3;
   --global-divider-color: var(--academic-line);
+  color-scheme: light;
 }
 body {
-  background-image: radial-gradient(ellipse 850px 650px at 80% 180px, #17323545, transparent 85%);
-  background-repeat: no-repeat;
+  background: #fff;
 }
 ::selection {
   color: #fff;
@@ -29,9 +29,9 @@ body {
   display: none !important;
 }
 #navbar {
-  background: #080f15ee;
+  background: #ffffffee;
   backdrop-filter: blur(18px);
-  border-bottom-color: #263137;
+  border-bottom-color: #dce4e2;
   padding: 18px 0;
 }
 #navbar .container,
@@ -50,11 +50,11 @@ footer > .container {
 #navbar .nameplate-english {
   font-size: 16px;
   font-weight: 400;
-  color: #b7bcba;
+  color: #626e70;
 }
 #navbar .nav-link {
   font-size: 16px;
-  color: #b9c0bf;
+  color: #4e5c60;
 }
 #navbar .language-toggle {
   font-size: 15px;
@@ -109,7 +109,7 @@ footer > .container {
   font-family: var(--academic-font);
   font-size: 20px;
   line-height: 1.5;
-  color: #b9beb8;
+  color: #626e70;
   margin: 0 0 14px;
 }
 html[data-language="zh"] .name-translation {
@@ -120,7 +120,7 @@ html[data-language="zh"] .name-translation {
   margin: 0;
   font-size: 17px;
   line-height: 1.6;
-  color: #d0d3ce;
+  color: #3f4b4d;
 }
 .hero-affiliation {
   margin: 4px 0 0;
@@ -133,7 +133,7 @@ html[data-language="zh"] .name-translation {
   max-width: 32em;
   font-size: 18px;
   line-height: 1.8;
-  color: #d1d4cf;
+  color: #3f4b4d;
   text-wrap: pretty;
   margin: 0;
 }
@@ -146,20 +146,20 @@ html[data-language="zh"] .name-translation {
   font-size: 15px;
 }
 .hero-links a {
-  color: #bacfc5;
+  color: #1b6657;
 }
 .robot-scene {
   min-width: 0;
   position: relative;
   margin: 0;
   padding: 0;
-  --scene-color: #a0d4c6;
+  --scene-color: #1b7768;
 }
 .robot-scene[data-mode="security"] {
-  --scene-color: #ffae7b;
+  --scene-color: #a74d1f;
 }
 .robot-scene[data-mode="interop"] {
-  --scene-color: #aebaff;
+  --scene-color: #5a5fa4;
 }
 .scene-viewport {
   position: relative;
@@ -175,7 +175,7 @@ html[data-language="zh"] .name-translation {
 }
 .scene-caption {
   min-height: 25px;
-  color: #a8b6b5;
+  color: #626e70;
   font-size: 14px;
   line-height: 1.7;
   text-align: center;
@@ -201,7 +201,7 @@ html[data-language="zh"] .name-translation {
   border-bottom: 2px solid transparent;
   border-radius: 0;
   background: transparent;
-  color: #aab8ba;
+  color: #59686b;
   font-size: 15px;
   padding: 8px 5px;
   cursor: pointer;
@@ -209,7 +209,7 @@ html[data-language="zh"] .name-translation {
   margin-bottom: -1px;
 }
 .scene-controls button:hover {
-  color: #f0efe9;
+  color: #1b6657;
 }
 .scene-modes button[aria-pressed="true"] {
   color: var(--scene-color);
@@ -230,7 +230,7 @@ html[data-language="zh"] .name-translation {
   content: "▷";
 }
 .research-section {
-  border-top: 1px solid #515d5e;
+  border-top: 1px solid #cbd6d3;
   padding-top: 35px;
 }
 .academic-home h2 {
@@ -261,7 +261,7 @@ html[data-language="zh"] .name-translation {
   font-family: var(--academic-display);
   font-size: 19px;
   font-style: italic;
-  color: #a9bcb4;
+  color: #626e70;
 }
 .direction-title h3 {
   font-size: 21px;
@@ -279,7 +279,7 @@ html[data-language="zh"] .name-translation {
 }
 .news-featured time,
 .news-tag {
-  color: #d9bc97;
+  color: #886029;
 }
 .news-item {
   padding: 10px 0;
@@ -301,7 +301,7 @@ html[data-language="zh"] .name-translation {
   margin-right: 10px;
 }
 .news-item a {
-  color: #b9d7cb;
+  color: #1b6657;
 }
 .small-label,
 .clean-list li > span:last-child:not([data-lang]),
@@ -323,16 +323,16 @@ html[data-language="zh"] .name-translation {
   font-size: 14px;
 }
 .home-publications .links .btn {
-  color: #bed7dd;
-  border-color: #3d5962;
+  color: #1b6657;
+  border-color: #a3bdb5;
 }
 .home-publications .links .btn:hover {
-  background: #223b43;
+  background: #eef5f2;
 }
 .publications ol.bibliography li .abbr abbr.badge {
-  background-color: #183e39;
-  color: #d9f1e7 !important;
-  border: 1px solid #3d7165;
+  background-color: #edf4f0;
+  color: #25594b !important;
+  border: 1px solid #bfd4ca;
   border-radius: 4px;
   padding: 7px 10px;
   font-family: var(--academic-font);
@@ -346,17 +346,17 @@ html[data-language="zh"] .name-translation {
   color: inherit;
 }
 .publications h2.bibliography {
-  color: #a9bcb4;
+  color: #626e70;
 }
 .corresponding-mark {
-  color: #aadace;
+  color: #1b6657;
   font-size: 0.8em;
   font-weight: 600;
   margin-left: 1px;
 }
 .publications .author-role,
 .paper-copy .author-role {
-  color: #aadace;
+  color: #1b6657;
   font-size: 14px;
   line-height: 1.5;
   margin: 4px 0 6px;
@@ -401,7 +401,7 @@ footer.sticky-bottom {
   font-size: 13px;
   line-height: 1.5;
   margin-top: 7px;
-  color: #a9b6b6;
+  color: #626e70;
 }
 .paper-copy p {
   margin: 0;
@@ -409,7 +409,7 @@ footer.sticky-bottom {
 .paper-copy .paper-venue {
   font-size: 15px;
   line-height: 1.55;
-  color: #cbb798;
+  color: #886029;
   margin-bottom: 5px;
 }
 .paper-award {
@@ -428,17 +428,17 @@ footer.sticky-bottom {
 .paper-copy .paper-authors {
   font-size: 14px;
   line-height: 1.65;
-  color: #a9b3b5;
+  color: #626e70;
 }
 .paper-authors strong {
-  color: #d2d8d6;
+  color: #242a2b;
   font-weight: 500;
 }
 .paper-copy .paper-summary {
   font-size: 16px;
   line-height: 1.75;
   margin-top: 10px;
-  color: #c3ccca;
+  color: #465558;
 }
 .paper-links {
   display: flex;

@@ -23,6 +23,15 @@
   },
   "work": [
     {
+      "name": "Peking University",
+      "position": "Assistant Professor",
+      "url": "https://www.ece.pku.edu.cn/en/",
+      "location": "Shenzhen, China",
+      "startDate": "2026-12-01",
+      "endDate": "Present",
+      "summary": "School of Electronic and Computer Engineering. Appointment starts on December 1, 2026. Research focuses on robot security, robot data, and interoperability."
+    },
+    {
       "name": "Tsinghua University",
       "position": "Postdoctoral Researcher",
       "url": "https://example.com",

@@ -153,6 +153,22 @@ html[data-language="zh"] .name-translation {
 .hero-intro p:last-child {
   margin-bottom: 0;
 }
+.hero-intro .recruitment-note {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.recruitment-note a {
+  color: #b4232a;
+}
+.recruitment-note [data-lang] {
+  color: inherit;
+}
+.recruitment-note a:hover,
+.recruitment-note a:focus-visible {
+  color: #8f1d24;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .hero-links {
   margin-top: 0;
   gap: 6px 18px;
